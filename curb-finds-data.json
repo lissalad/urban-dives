@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "title": "books",
+    "image": "books.png",
+    "description": "paper bags of many books outside house",
+    "latitude": 37.75421,
+    "longitude": -122.44057
+  },
+  {
+    "id": 1,
+    "title": "kid's toys and stuffed animals",
+    "image": "kids-stuff.png",
+    "description": "random toys, condition unknown",
+    "latitude": 37.76483,
+    "longitude": -122.42473
+  },
+  {
+    "id": 2,
+    "title": "two sofa chairs",
+    "image": "chairs.png",
+    "description": "look to be in pretty good shape, might need some work though",
+    "latitude": 37.76708,
+    "longitude": -122.42893
+  }
+]
