@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import FeedTab from "./components/FeedTab";
 import MapTab from "./components/MapTab.js";
-import CalendarTab from "./components/CalendarTab";
+import CalendarTab from "./components/CalendarTab.js";
 import { CalendarIcon, HomeIcon, MapIcon } from "./components/Icons";
 import { Ionicons } from "react-native-vector-icons";
 
@@ -32,9 +32,9 @@ export default function App() {
           tabBarInactiveTintColor: "gray",
         })}
       >
+        <Tab.Screen name="Map" component={MapTab} />
         <Tab.Screen name="Home" component={FeedTab} />
-        <Tab.Screen name="Calendar" component={MapTab} />
-        <Tab.Screen name="Map" component={CalendarTab} />
+        <Tab.Screen name="Calendar" component={CalendarTab} />
       </Tab.Navigator>
     </NavigationContainer>
   );
