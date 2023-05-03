@@ -1,13 +1,12 @@
 import { Text, View, Image, StyleSheet } from "react-native";
 
 export default function CurbPost({ post }) {
-  // const imgPath = "../images/" + post.image;
+  const imgPath = "../images/" + post.image;
   const placeholder = require("../assets/images/chairs.png");
 
   return (
     <View style={styles.container}>
-      <Image source={placeholder} style={styles.img} />
-      {/* <View style={styles.img}></View> */}
+      <Image source={post.uri} style={styles.img} />
       <View style={styles.details}>
         <Text style={styles.title}>{post.title}</Text>
         <Text style={styles.description}>{post.description}</Text>

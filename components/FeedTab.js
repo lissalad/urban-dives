@@ -1,6 +1,6 @@
 import { Text, View, FlatList, SafeAreaView } from "react-native";
 import CurbPost from "./CurbPost";
-import * as data from "../curb-finds-data.json";
+import data from "../curb-finds";
 
 export default function FeedTab() {
   return (

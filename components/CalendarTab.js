@@ -37,8 +37,9 @@ const styles = StyleSheet.create({
   },
 
   prompt: {
-    fontSize: 20,
+    fontSize: 16,
     textAlign: "center",
+    marginBottom: 20,
   },
 
   input: {

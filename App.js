@@ -32,9 +32,9 @@ export default function App() {
           tabBarInactiveTintColor: "gray",
         })}
       >
-        <Tab.Screen name="Map" component={MapTab} />
         <Tab.Screen name="Home" component={FeedTab} />
         <Tab.Screen name="Calendar" component={CalendarTab} />
+        <Tab.Screen name="Map" component={MapTab} />
       </Tab.Navigator>
     </NavigationContainer>
   );

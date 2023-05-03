@@ -1,20 +1,7 @@
-import { Text, View } from "react-native";
-import MapView from "react-native-maps";
+import { Text, View, StyleSheet } from "react-native";
 
 export default function MapTab() {
-  return (
-    <View style={styles.container}>
-      {/* <MapView
-        style={{ flex: 1 }}
-        initialRegion={{
-          latitude: 37.78825,
-          longitude: -122.4324,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
-        }}
-      ></MapView> */}
-    </View>
-  );
+  return <View style={styles.container}></View>;
 }
 
 const styles = StyleSheet.create({
