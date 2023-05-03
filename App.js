@@ -28,14 +28,23 @@ export default function App() {
 
             return <Ionicons name={iconName} size={size} color={color} />;
           },
+          tabBarLabel: () => null, // hide the text labels
           tabBarActiveTintColor: "teal",
           tabBarInactiveTintColor: "gray",
+          headerStyle: {
+            backgroundColor: "teal",
+          },
+          headerTintColor: "#dff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
         })}
       >
         <Tab.Screen name="Home" component={FeedTab} />
         <Tab.Screen name="Calendar" component={CalendarTab} />
         <Tab.Screen name="Map" component={MapTab} />
       </Tab.Navigator>
+      <StatusBar />
     </NavigationContainer>
   );
 }
