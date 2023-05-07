@@ -22,5 +22,37 @@
     "description": "look to be in pretty good shape, might need some work though",
     "latitude": 37.76708,
     "longitude": -122.42893
+  },
+  {
+    "id": 3,
+    "title": "two pans",
+    "image": "pans.png",
+    "description": "two used pans on the sidewalk",
+    "latitude": 37.76301,
+    "longitude": -122.42712
+  },
+  {
+    "id": 4,
+    "title": "mattresses and office chair",
+    "image": "mattresses-chair.png",
+    "description": "two mattresses and an office chair, marked for recology",
+    "latitude": 37.76462,
+    "longitude": -122.42896
+  },
+  {
+    "id": 5,
+    "title": "cat stuff",
+    "image": "cat.png",
+    "description": "pieces of cat tower and other pet supplies",
+    "latitude": 37.766868,
+    "longitude": -122.421998
+  },
+  {
+    "id": 6,
+    "title": "mini pool tabel, toaster oven, assorted items",
+    "image": "assorted.png",
+    "description": "various items in unknown condition",
+    "latitude": 37.76561,
+    "longitude": -122.42637
   }
 ]

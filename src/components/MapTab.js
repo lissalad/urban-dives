@@ -1,7 +1,14 @@
 import { Text, View, StyleSheet } from "react-native";
+import { useSelector } from "react-redux";
 
 export default function MapTab() {
-  return <View style={styles.container}></View>;
+  const selectedFind = useSelector((state) => state.finds.selectedFind);
+
+  return (
+    <View style={styles.container}>
+      <Text>{selectedFind.title}</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({

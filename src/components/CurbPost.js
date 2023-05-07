@@ -1,8 +1,10 @@
-import { Text, View, Image, StyleSheet } from "react-native";
+import { Text, View, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { Ionicons } from "react-native-vector-icons";
+import { useSelector, useDispatch } from "react-redux";
+import { setSelectedFind } from "../features/finds/FindSlice";
 
 export default function CurbPost({ post }) {
-  const imgPath = "../images/" + post.image;
-  const placeholder = require("../assets/images/chairs.png");
+  const dispatch = useDispatch();
 
   return (
     <View style={styles.container}>
@@ -11,6 +13,9 @@ export default function CurbPost({ post }) {
         <Text style={styles.title}>{post.title}</Text>
         <Text style={styles.description}>{post.description}</Text>
       </View>
+      <TouchableOpacity onPress={() => dispatch(setSelectedFind(post))}>
+        <Ionicons name="location-outline" size={24} color="black" />
+      </TouchableOpacity>
     </View>
   );
 }
