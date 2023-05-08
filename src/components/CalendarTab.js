@@ -24,12 +24,11 @@ const styles = StyleSheet.create({
   },
 
   calendar: {
-    flex: 1,
     width: "100%",
   },
 
   form: {
-    flex: 1,
+    // flex: 1,
     flexDirection: "column",
     gap: 8,
     marginTop: 24,
@@ -37,7 +36,7 @@ const styles = StyleSheet.create({
   },
 
   prompt: {
-    fontSize: 16,
+    fontSize: 14,
     textAlign: "center",
     marginBottom: 20,
   },

@@ -1,21 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
-import data from "../../../curb-finds";
+// import data from "../../../curb-finds";
 
 const initialState = {
-  id: null,
-  selectedFind: data[0],
+  selectedFind: {
+    id: 0,
+    title: "books",
+    image: "books.png",
+    description: "paper bags of many books outside house",
+    latitude: 37.75421,
+    longitude: -122.44057,
+  },
 };
 
 export const findSlice = createSlice({
   name: "finds",
   initialState,
   reducers: {
-    setId: (state, action) => {
-      state.id = action.payload;
-    },
     setSelectedFind: (state, action) => {
       state.selectedFind = action.payload;
-      console.log(state.selectedFind);
+      // console.log(state.selectedFind.title + ", WORKING in slice");
     },
   },
 });
